@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-linear-to-b  relative h-screen lg:h-[140vh] overflow-hidden">
+    <div className="bg-linear-to-b from-0% to-black relative h-screen lg:h-[140vh] overflow-hidden">
         <main className="relative pb-24 pl-4  lg:pl-16">
         
 
@@ -10,7 +10,7 @@ export default function Home() {
 
               <div className="absolute flex flex-col left-0 top-0 -z-10 h-[95vh] w-screen bg-black">
                 <Image
-                src='/banner1.jpg'
+                src='/banner2.jpg'
                 alt=" The Witcher"
                 fill={true}
                 className="h-[65vh] object-cover"
@@ -18,8 +18,6 @@ export default function Home() {
                 
               </div>
               
-              
-
               <h1 className="text-2xl font-bold md:text-4xl lg:text-7xl">
                 The Witcher
               </h1>
@@ -37,7 +35,7 @@ export default function Home() {
                 Play
                 </button>
               <button className="
-                bg-gray-600 text-black md:text-xl flex cursor-pointer items-center 
+                bg-red-500 text-black md:text-xl flex cursor-pointer items-center 
                 gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition
                 hover:opacity-75 nd:px-8 md:py-2.5">
                 More Info
