@@ -1,13 +1,22 @@
 "use client";
 
 import React from "react";
-import { useScroll } from "@/hooks/useScroll";
+import Image from "next/image";
+import { useScroll } from "../hooks/useScroll";
 import { NavLinks } from "./NavLinks";
 import { UserMenu } from "./UserMenu";
 
 export default function Header() {
     const isScrolled = useScroll();
 
+    const Logo = <Image
+        src="/logo.svg"
+        alt="Logo do Streaming"
+        width={120}
+        height={120}
+        priority
+        className="cursor-pointer object-contain" />;
+        
     return (
         <header className={`
             ${isScrolled && 'bg-black'}
@@ -16,12 +25,8 @@ export default function Header() {
             transition-all lg:px-10 lg:py-6
         `}>
             <div className="flex items-center space-x-2 md:space-x-8">
-                <img 
-                    src="https://rb.gy/ulxxee" 
-                    width={120} 
-                    height={120} 
-                    alt="Logo do Streaming" 
-                />
+                {Logo}
+               
                 <NavLinks />
             </div>
             

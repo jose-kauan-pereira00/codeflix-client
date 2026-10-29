@@ -1,2 +1,1 @@
-aula 2717
-ajeitar os negocios
+aula 2718
