@@ -21,6 +21,7 @@ export default function Header(){
         };
     }, []);
 
+
     return (
         <header className={`
         ${isCrolled && 'bg-black'}
