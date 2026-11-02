@@ -14,7 +14,6 @@ export function useScroll(threshold = 0) {
 
         window.addEventListener('scroll', handleScroll);
         
-        // Executa uma vez para verificar o estado inicial caso a página recarregue já scrolled
         handleScroll();
 
         return () => {
