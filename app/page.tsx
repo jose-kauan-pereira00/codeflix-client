@@ -46,16 +46,25 @@ export default function Home() {
                 </button>
             </div>
 
-            <div>
-              {[1, 2, 3, 4, 5, 6].map((index) => (
-                <Image
-                key={index}
-                src={`/images/item_${index}.jpg`}
-                fill={true}
-                alt="Maid"
-                className="rounded"
-                />
-              ))};
+            <div className="flex-col space-y-4 ">
+
+              <div className="flex space-x-4 overflow-x-scroll">
+                {[1, 2, 3, 4, 5, 6].map((index) => (
+
+                <div key={index} className="h-28 min-w-50 group relative transition
+                duration-200 ease-in transform sm:h-36 hover:scale-110
+                 hover:z-50">
+                  <Image
+                  src={`/images/item_${index}.jpg`}
+                  fill={true}
+                  alt="Maid"
+                  className="rounded"
+                  />
+                </div>
+
+                ))};
+              </div>
+
             </div>
            
         </main>
