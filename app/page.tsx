@@ -44,8 +44,9 @@ export default function Home() {
                 <InformationCircleIcon className="h-6" />
                 More Info
                 </button>
-                
             </div>
+
+            
            
         </main>
     </div>
