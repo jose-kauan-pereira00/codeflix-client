@@ -46,7 +46,9 @@ export default function Home() {
                 </button>
             </div>
            
-           <MovieRow />
+           <MovieRow sectionTitle="Trendig Now" />
+           <MovieRow sectionTitle="Top Rated" />
+           <MovieRow sectionTitle="Action Movies" />
         </main>
     </div>
   );
