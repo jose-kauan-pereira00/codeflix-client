@@ -15,3 +15,15 @@ Terminologias:
 * Caminho de URL: Parte da URL que vem após o dominio(composto por segmentos)
 
 ## O Roteador do App
+
+
+## Convenção de arquivos
+* Layout: UI compartilhado para um segmento e seus filhos
+* Page: Ui única de uma rota e torna as rotas publicamente acessiveis
+* Loading: UI de carregamento para um segmento e seus filhos
+* Not-Found: Ui para não encontrada
+* erro: ui de erro
+* global erro: Ui de erro global
+* router: Endpoint da API do lado do servidort
+* template: ui de laytou especializado 
+* default: Ui de fallback para rotas paralelas
