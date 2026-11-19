@@ -1,0 +1,1 @@
+Usado par mostrar que está carregando alguma outra pagina
