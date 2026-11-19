@@ -44,7 +44,7 @@ export function MovieRow({sectionTitle} : MovieRowProps) {
               [-ms-overflow-style:none]">
 
         <div className="flex space-x-4 pb-4 w-max">
-          {[1, 2, 3, 4, 5, 6].map((index) => (
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((index) => (
             <MovieCard key={index} index={index} />
           ))}
         </div>
